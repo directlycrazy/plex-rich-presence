@@ -64,7 +64,7 @@ public class RichPresence {
                 this.updateMessage(String.format("%s %s", currentPlayerState, session.getGrandparentTitle()), String.format("⏏ %02dx%02d - %s", Integer.parseInt(session.getParentIndex()), Integer.parseInt(session.getIndex()), session.getTitle()));
                 break;
             case "track":
-                this.updateMessage(String.format("%s %s", currentPlayerState, session.getGrandparentTitle()), String.format("♫ %02dx%02d - %s", Integer.parseInt(session.getParentIndex()), Integer.parseInt(session.getIndex()), session.getTitle()));
+                this.updateMessage(String.format("%s %s on %s", currentPlayerState, session.getGrandparentTitle(), session.getParentTitle()), String.format("♫ %02dx%02d - %s", Integer.parseInt(session.getParentIndex()), Integer.parseInt(session.getIndex()), session.getTitle()));
                 break;
             default:
                 this.updateMessage(
